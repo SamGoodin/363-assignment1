@@ -1,0 +1,15 @@
+// $Id: Array.mpc 820 2011-01-17 15:30:41Z hillj $
+
+project (Array) {
+	exename = Array
+	install = .
+
+	specific (make, gnuace) {
+		compile_flags += -std=c++11
+	}
+
+	Source_Files {
+		Array.cpp
+		driver.cpp
+	}
+}
